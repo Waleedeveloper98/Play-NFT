@@ -4,21 +4,21 @@ function CountdownTimer() {
   const [secondsLeft, setSecondsLeft] = useState(80 * 60);
 
   useEffect(() => {
-    if (secondsLeft <= 0) return;
+    if (secondsLeft < 0) return;
 
-    const intervalId = setInterval(() => {
+    let intervl = setInterval(() => {
       setSecondsLeft((prev) => prev - 1);
     }, 1000);
 
-    return () => clearInterval(intervalId); 
+    return () => {
+      clearInterval(intervl);
+    };
   }, [secondsLeft]);
 
-  // Convert secondsLeft to hh:mm:ss
   const hours = Math.floor(secondsLeft / 3600);
   const minutes = Math.floor((secondsLeft % 3600) / 60);
-  const seconds = secondsLeft % 60;
+  const seconds = Math.floor(secondsLeft % 60);
 
-  // Format with leading zeros
   const format = (num) => String(num).padStart(2, "0");
 
   return (

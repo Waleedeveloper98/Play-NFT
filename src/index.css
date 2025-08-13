@@ -2,12 +2,47 @@
 @import "tailwindcss";
 
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .gradientBorder {
-    background: linear-gradient(#060318, #060318) padding-box,
-        linear-gradient(to right, #9425FA, #599DFF) border-box;
-    border-radius: 10px;
-    border: 2px solid transparent;
+  background: linear-gradient(#060318, #060318) padding-box,
+    linear-gradient(to right, #9425FA, #599DFF) border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.marque {
+  white-space: nowrap;
+  display: flex;
+  animation: move 25s linear infinite;
+}
+
+
+.cards-marque-container .card-marque { 
+   animation: cardsmove 50s linear infinite;
+ } 
+
+@keyframes cardsmove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

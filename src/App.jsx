@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Hero from "./components/Hero";
 import Lenis from "lenis";
+import BrandsMarque from "./components/BrandsMarque";
+import Page2 from "./pages/Page2";
 
 const App = () => {
   useEffect(() => {
@@ -26,7 +28,8 @@ const App = () => {
   return (
     <div className="w-full bg-[#060318] min-h-screen">
       <Hero />
-      <div className="h-[200vh] bg-purple-400"></div>
+      <Page2 />
+
     </div>
   );
 };
