@@ -46,3 +46,24 @@ body {
     transform: translateX(-50%);
   }
 }
+
+.seller-marque1{
+  animation: sellerMarque1 25s linear infinite;
+}
+@keyframes sellerMarque1 {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-50%);
+  }
+}
+.seller-marque2{
+  animation: sellerMarque2 25s linear infinite;
+}
+@keyframes sellerMarque2 {
+  from{
+    transform: translateX(-50%);
+  }to{
+    transform: translateX(0%);
+  }
+}

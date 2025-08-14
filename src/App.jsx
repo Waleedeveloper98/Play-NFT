@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Lenis from "lenis";
 import BrandsMarque from "./components/BrandsMarque";
 import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
 
 const App = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const App = () => {
     <div className="w-full bg-[#060318] min-h-screen">
       <Hero />
       <Page2 />
-
+      <Page3 />
     </div>
   );
 };

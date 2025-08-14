@@ -5,14 +5,12 @@ function CountdownTimer() {
 
   useEffect(() => {
     if (secondsLeft < 0) return;
-
-    let intervl = setInterval(() => {
+    let interval = setInterval(() => {
       setSecondsLeft((prev) => prev - 1);
+      console.log(secondsLeft);
     }, 1000);
 
-    return () => {
-      clearInterval(intervl);
-    };
+    return () => clearInterval(interval);
   }, [secondsLeft]);
 
   const hours = Math.floor(secondsLeft / 3600);
