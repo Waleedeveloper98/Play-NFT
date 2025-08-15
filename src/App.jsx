@@ -4,6 +4,7 @@ import Lenis from "lenis";
 import BrandsMarque from "./components/BrandsMarque";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
+import Footer from "./pages/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
       <Hero />
       <Page2 />
       <Page3 />
+      <Footer />
     </div>
   );
 };

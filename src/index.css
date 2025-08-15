@@ -19,9 +19,9 @@
 }
 
 
-.cards-marque-container .card-marque { 
-   animation: cardsmove 50s linear infinite;
- } 
+.cards-marque-container .card-marque {
+  animation: cardsmove 50s linear infinite;
+}
 
 @keyframes cardsmove {
   from {
@@ -47,23 +47,38 @@ body {
   }
 }
 
-.seller-marque1{
+.seller-marque1 {
   animation: sellerMarque1 25s linear infinite;
 }
+
 @keyframes sellerMarque1 {
-  from{
+  from {
     transform: translateX(0);
-  }to{
+  }
+
+  to {
     transform: translateX(-50%);
   }
 }
-.seller-marque2{
+
+.seller-marque2 {
   animation: sellerMarque2 25s linear infinite;
 }
+
 @keyframes sellerMarque2 {
-  from{
+  from {
     transform: translateX(-50%);
-  }to{
+  }
+
+  to {
     transform: translateX(0%);
+  }
+}
+.join-banner {
+    border-radius: 100px 10px 100px 10px;
+  }
+@media (min-width: 700px) {
+  .join-banner {
+    border-radius: 700px 40px 700px 40px;
   }
 }

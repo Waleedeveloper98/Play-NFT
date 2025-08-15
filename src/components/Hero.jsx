@@ -35,7 +35,7 @@ const Hero = () => {
             non fungible tokens (NFTs)
           </p>
           <div className="flex w-fit px-4 py-2 rounded-lg mx-auto md:mx-0 gap-8 md:gap-20 lg:gap-10 md:w-full">
-            <BgBtn />
+            <BgBtn text={"Discover"}/>
             <BorderBtn />
             <div className="hidden md:flex items-center gap-2">
               <BsFillCameraVideoFill className="" />
@@ -91,7 +91,7 @@ const Hero = () => {
               <div className="left">
                 <h3>Ending in:</h3>
                 <CountdownTimer />
-                <BgBtn />
+                <BgBtn text={"Place a Bid"}/>
               </div>
               <div className="right">
                 <h3>Highest Bit</h3>

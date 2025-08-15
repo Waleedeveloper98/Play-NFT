@@ -7,7 +7,6 @@ function CountdownTimer() {
     if (secondsLeft < 0) return;
     let interval = setInterval(() => {
       setSecondsLeft((prev) => prev - 1);
-      console.log(secondsLeft);
     }, 1000);
 
     return () => clearInterval(interval);
