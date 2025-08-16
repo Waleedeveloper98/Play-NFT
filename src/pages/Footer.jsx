@@ -29,7 +29,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full h-screen pt-20 flex flex-col justify-between sm:justify-end sm:gap-24 sm:h-fit">
+    <div className="w-full min-h-screen pt-20 flex flex-col justify-between sm:justify-end sm:gap-24 sm:h-fit">
       <JoinBanner />
       <footer className="flex flex-col md:flex-row  gap-20 md:gap-0 w-full text-white px-3 md:px-12 py-10 sm:justify-between">
         <div className="left sm:w-2/5 md:w-1/2 flex flex-col items-center justify-center text-center sm:text-start sm:justify-start sm:items-start">
