@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import { BsFillCameraVideoFill } from "react-icons/bs";
-import BgBtn from "./BgBtn";
-import BorderBtn from "./BorderBtn";
-import CountdownTimer from "./CountdownTimer";
+import BgBtn from "../components/BgBtn";
+import BorderBtn from "../components/BorderBtn";
+import CountdownTimer from "../components/CountdownTimer";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -25,17 +25,17 @@ const Hero = () => {
       <div className="absolute -left-24 top-24 glow w-72 h-96 rounded-full bg-blue-400/60 blur-3xl"></div>
       <div className="absolute -right-24 bottom-24 md:-bottom-0 lg:bottom-30 glow w-72 h-60 rounded-full bg-blue-400/60 blur-3xl"></div>
 
-      <div className="flex flex-col md:flex-row w-full relative text-white px-6 md:px-20 pt-8 md:pt-14">
-        <div className="left w-full lg:w-1/2 pt-4 flex flex-col gap-6 md:gap-10 md:w-full">
-          <h1 className="text-4xl md:text-7xl lg:text-6xl font-bold leading-12 md:leading-20 lg:leading-16">
+      <div className="flex flex-col md:flex-row md:justify-between w-full relative text-white px-6 md:px-12 pt-8 md:pt-14">
+        <div className="left w-full lg:w-1/2 pt-4 flex flex-col gap-6 md:gap-10 md:w-3/5">
+          <h1 className="text-3xl md:text-7xl lg:text-6xl font-bold leading-11 md:leading-20 lg:leading-16">
             Discover,Collect and Sell Dope Art and NFTs
           </h1>
-          <p className="text-zinc-200 md:text-[1.1rem] md:pr-10">
+          <p className="text-zinc-200 text-sm md:text-[1.1rem] md:pr-10">
             The world's largest digital marketplace for crypto collections and
             non fungible tokens (NFTs)
           </p>
           <div className="flex w-fit px-4 py-2 rounded-lg mx-auto md:mx-0 gap-8 md:gap-20 lg:gap-10 md:w-full">
-            <BgBtn text={"Discover"}/>
+            <BgBtn text={"Discover"} />
             <BorderBtn />
             <div className="hidden md:flex items-center gap-2">
               <BsFillCameraVideoFill className="" />
@@ -80,8 +80,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="right md:hidden lg:block mt-28 md:mt-0 w-full md:w-1/2 flex items-center justify-center">
-          <div className="img-box relative md:w-4/5 lg:w-4/5 lg:h-[100vh] lg:mx-auto rounded-lg overflow-hidden">
+        <div className="right md:hidden lg:block mt-28 md:mt-0 w-full md:w-[40%] flex items-center justify-center">
+          <div className="img-box relative w-full h-full lg:mx-auto rounded-lg overflow-hidden">
             <img
               className="w-full h-full object-cover object-left"
               src="./public/hero.png"
@@ -91,7 +91,7 @@ const Hero = () => {
               <div className="left">
                 <h3>Ending in:</h3>
                 <CountdownTimer />
-                <BgBtn text={"Place a Bid"}/>
+                <BgBtn text={"Place a Bid"} />
               </div>
               <div className="right">
                 <h3>Highest Bit</h3>

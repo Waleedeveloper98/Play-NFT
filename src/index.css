@@ -20,7 +20,7 @@
 
 
 .cards-marque-container .card-marque {
-  animation: cardsmove 50s linear infinite;
+  animation: cardsmove 90s linear infinite;
 }
 
 @keyframes cardsmove {
@@ -29,14 +29,16 @@
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-38%);
   }
+}
+html, body {
+  height: 100%;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
-
 @keyframes move {
   from {
     transform: translateX(0);

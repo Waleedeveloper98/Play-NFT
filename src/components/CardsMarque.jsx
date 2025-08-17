@@ -12,6 +12,7 @@ const CardsMarque = () => {
       <div className="pr-20 card-marque flex items-center justify-center whitespace-nowrap gap-14">
         <Card />
         <Card />
+        <Card />
       </div>
     </div>
   );
