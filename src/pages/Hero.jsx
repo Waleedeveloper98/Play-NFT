@@ -5,6 +5,7 @@ import BgBtn from "../components/BgBtn";
 import BorderBtn from "../components/BorderBtn";
 import CountdownTimer from "../components/CountdownTimer";
 import { motion } from "framer-motion";
+import heroImg from "./assets/hero.png";
 
 const Hero = () => {
   const avatars = [
@@ -20,7 +21,10 @@ const Hero = () => {
     { value: "7k +", label: "Artists" },
   ];
   return (
-    <div id="home" className="relative pb-40 overflow-x-hidden w-full min-h-screen">
+    <div
+      id="home"
+      className="relative pb-40 overflow-x-hidden w-full min-h-screen"
+    >
       <Navbar />
       <div className="absolute -left-24 top-24 glow w-72 h-96 rounded-full bg-blue-400/60 blur-3xl"></div>
       <div className="absolute -right-24 bottom-24 md:-bottom-0 lg:bottom-30 glow w-72 h-60 rounded-full bg-blue-400/60 blur-3xl"></div>
@@ -84,7 +88,7 @@ const Hero = () => {
           <div className="img-box relative w-full h-full lg:mx-auto rounded-lg overflow-hidden">
             <img
               className="w-full h-full object-cover object-left"
-              src="./public/hero.png"
+              src={heroImg}
               alt=""
             />
             <div className="label absolute w-full bottom-0 left-0 h-32 bg-gradient-to-r from-purple-600/60 to-blue-400/50 flex items-center justify-between px-6">
