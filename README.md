@@ -16,7 +16,6 @@ A modern NFT Marketplace UI built with React.js, inspired by a Pinterest design.
 
 🎨 Modern UI with gradient backgrounds and glassmorphism
 
-
 🛠️ Tech Stack
 
 React.js
@@ -26,3 +25,11 @@ TailwindCSS
 Framer Motion
 
 Custom Assets
+
+Notes
+
+This is a UI/Frontend-only project (no backend or blockchain integration).
+
+Assets were self-generated to replace the missing design assets.
+
+Free to use, modify, and expand into a full NFT marketplace.
