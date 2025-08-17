@@ -20,7 +20,7 @@ const Hero = () => {
     { value: "7k +", label: "Artists" },
   ];
   return (
-    <div className="relative pb-40 overflow-x-hidden w-full min-h-screen">
+    <div id="home" className="relative pb-40 overflow-x-hidden w-full min-h-screen">
       <Navbar />
       <div className="absolute -left-24 top-24 glow w-72 h-96 rounded-full bg-blue-400/60 blur-3xl"></div>
       <div className="absolute -right-24 bottom-24 md:-bottom-0 lg:bottom-30 glow w-72 h-60 rounded-full bg-blue-400/60 blur-3xl"></div>

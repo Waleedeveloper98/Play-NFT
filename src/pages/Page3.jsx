@@ -5,7 +5,7 @@ import ArtworkGallery from "../components/ArtworkGallery";
 
 const Page3 = () => {
   return (
-    <div className="w-full min-h-screen text-white py-14">
+    <div id="marketplace" className="w-full min-h-screen text-white py-14">
       <h1 className="text-center text-5xl font-bold mb-20">Top Sellers</h1>
       <div className="sellers-marques-contaier relative py-10 flex flex-col gap-6">
         <div className="seller-marque1 flex flex-nowrap gap-10">

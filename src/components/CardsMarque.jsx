@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const CardsMarque = () => {
   return (
-    <div className="cards-marque-container w-full lg:h-[50vh] relative z-50   flex items-center mt-20 justify-center">
+    <div id="artists" className="cards-marque-container w-full lg:h-[50vh] relative z-50   flex items-center mt-20 justify-center">
         {/* side blur */}
         <div className="left-blur absolute h-full w-14 md:w-28 bg-black/70 blur-xl -left-7 z-50 rounded-r-full"></div>
         <div className="right-blur absolute -right-7 w-14 md:w-28 h-full rounded-l-full z-50 bg-black/70 blur-xl"></div>
