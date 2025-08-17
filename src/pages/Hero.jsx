@@ -5,7 +5,7 @@ import BgBtn from "../components/BgBtn";
 import BorderBtn from "../components/BorderBtn";
 import CountdownTimer from "../components/CountdownTimer";
 import { motion } from "framer-motion";
-import heroImg from "./assets/hero.png";
+import heroImg from "../assets/hero.png";
 
 const Hero = () => {
   const avatars = [
