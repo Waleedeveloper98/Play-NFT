@@ -47,17 +47,17 @@ const Navbar = () => {
           isOpen ? "top-22" : "-translate-y-full"
         } flex flex-col items-center justify-center gap-6 py-12 font-medium transition-all duration-300 md:hidden`}
       >
-        {["home", "explore", "marketplace", "artists", "news"].map(
-          (item, index) => (
-            <li
-              key={index}
-              className="group capitalize relative cursor-pointer hover:font-medium transition-all duration-300 mx-3"
-            >
-              {item}
-              <div className="line absolute left-0 -bottom-[2px] w-[0%] h-[3px]  transition-all duration-300 bg-gradient-to-r from-purple-600 to-blue-400 rounded-full group-hover:w-[60%]"></div>
-            </li>
-          )
-        )}
+        {menuLinks.map((item) => (
+          <li
+            key={item.title}
+            className="group capitalize relative cursor-pointer hover:font-medium transition-all duration-300 mx-3"
+          >
+            <Link to={item.url} smooth="true" duration={600}>
+              {item.title}
+            </Link>
+            <div className="line absolute left-0 -bottom-[2px] w-[0%] h-[3px]  transition-all duration-300 bg-gradient-to-r from-purple-600 to-blue-400 rounded-full group-hover:w-[60%]"></div>
+          </li>
+        ))}
       </ul>
     </nav>
   );
